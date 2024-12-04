@@ -41,6 +41,21 @@ services:
         networks:
             - laravel
 
+    testdb:
+        image: mysql
+        restart: unless-stopped
+        environment:
+            MYSQL_DATABASE: testing
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_PASSWORD: userpass
+            MYSQL_USER: username
+        volumes:
+            - ./.docker/mysql/dbtestingdata:/var/lib/mysql
+        ports:
+            - "3387:3307"
+        networks:
+            - laravel
+
 
    
 
