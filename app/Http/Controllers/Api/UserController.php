@@ -24,27 +24,31 @@ class UserController extends Controller
         $this->middleware('auth:api', ['except' => ['login']]);
     }
 
-    public function login(Request $request){
-    $credentials = $request->validate([
-        'email' => ['required'],
-        'password' => ['required'],
-    ]);
+    public function login(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required'],
+            'password' => ['required'],
+        ]);
 
-    $token = auth('api')->attempt($credentials);
+        $token = auth('api')->attempt($credentials);
 
-    if($token){
-        
+        if ($token) {
 
+            return response()->json([
+                'type' => 'success',
+                'message' => 'Login efetuado com sucesso',
+                'token' => $token
+            ]);
+        }
 
         return response()->json([
-            'type' => 'success',
-            'message' => 'Login efetuado com sucesso',
-            'token' => $token
-        ]);
+            'type' => 'error',
+            'message' => 'Não encontramos um usuário com essas credenciais'
+        ], 401);
+        
+        // throw ValidationException::withMessages([
+        //     'email' => '',
+        // ]);
     }
-
-    throw ValidationException::withMessages([
-        'email' => 'Não encontramos um usuário com essas credenciais',
-    ]);
-}
 }
