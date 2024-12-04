@@ -1,0 +1,111 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.sidebar{
+    width: 280px;
+}
+
+.navbar-vertical.navbar-expand-xs{
+    z-index: 99 !important;
+}
+.file-list {
+    /* border: 3px dotted black; */
+    display: flex !important;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 10px 20px;
+    margin: 20px 30px;
+    /* border: 3px dotted black; */
+}
+
+.file-list img {
+    height: 100%;
+    width: 100px;
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+
+.medicine-type{
+    display: inline;
+    padding: 0.5rem;
+    border-radius: 13px;
+    margin-bottom: 1em;
+}
+
+
+.prescription-item {
+
+}
+
+.prescription-item:nth-child(odd) {
+    background-color: #F3f3f3;
+}
+
+.react-date-picker__wrapper{
+    border:var(--bs-border-width) solid var(--bs-border-color) !important;
+    padding: 0.285rem 0.75rem;
+    border-radius: var(--bs-border-radius);
+}
+.tiptap{
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    padding: 5px;
+}
+
+.tiptap-tollbar button,.tiptap-tollbar input,.tiptap-tollbar select {
+    font-size: inherit;
+    font-family: inherit;
+    color: #000;
+    margin: .1rem;
+    border: 1px solid black;
+    border-radius: .3rem;
+    padding: .1rem .4rem;
+    background: white;
+    accent-color: black
+}
+
+.tiptap button[disabled],input[disabled],select[disabled] {
+    opacity: .3
+}
+
+.tiptap > * + * {
+    margin-top: 0.75em;
+}
+.tiptap ul, .tiptap ol {
+    padding: 0 1rem;
+}
+.tiptap h1, .tiptap h2, .tiptap h3, .tiptap h4, .tiptap h5, .tiptap h6 {
+    line-height: 1.1;
+}
+.tiptap code {
+    background-color: rgba(97, 97, 97, 0.1);
+    color: #616161;
+}
+.tiptap pre {
+    background: #0d0d0d;
+    color: #fff;
+    font-family: 'JetBrainsMono', monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+.tiptap pre code {
+    color: inherit;
+    padding: 0;
+    background: none;
+    font-size: 0.8rem;
+}
+.tiptap img {
+    max-width: 100%;
+    height: auto;
+}
+.tiptap blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid rgba(13, 13, 13, 0.1);
+}
+.tiptap hr {
+    border: none;
+    border-top: 2px solid rgba(13, 13, 13, 0.1);
+    margin: 2rem 0;
+}
+
