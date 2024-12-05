@@ -1,4 +1,10 @@
-## Teste Programador PHP
+# Teste Programador PHP
+
+## Framework: Laravel
+
+O framework escolhido foi o Laravel. PPara projetos em PHP tenho escolhido sempre pela a sua robustez e elegância. Projetos feitos com Laravel tendem a ser mais organizados e optimizados por natureza do design dele.
+
+## Instalação
 
 Para rodar o projeto, clone este projeto
 
