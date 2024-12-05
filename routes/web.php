@@ -8,7 +8,9 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', DashboardController::class)->name('home');
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('dashboard', DashboardController::class)->name('dashboard');

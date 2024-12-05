@@ -5,13 +5,6 @@
 O framework escolhido foi o Laravel. PPara projetos em PHP tenho escolhido sempre pela a sua robustez e elegância. Projetos feitos com Laravel tendem a ser mais organizados e optimizados por natureza do design dele.
 
 
-## Documentação API
-
-Importar o documento no Postman
-
-```
-Teste Magnum.postman_collection.json
-```
 
 ## Instalação
 
@@ -87,3 +80,12 @@ Configurar o secret do JWT
 php artisan jwt:secret
 ```
 Acesse a aplicação em `http://localhost:8989`
+
+
+## Documentação API
+
+Importar o documento no Postman
+
+```
+Teste Magnum.postman_collection.json
+```
