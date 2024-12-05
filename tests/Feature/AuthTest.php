@@ -66,4 +66,23 @@ class AuthTest extends TestCase
 
         // $response->assertStatus(200);
     }
+
+
+    public function test_register_success(): void
+    {
+        $this->json('post', 'api/register',[
+            'email' => fake()->email,
+            'password' => fake()->password,
+            'name' => fake()->name
+        ])
+        
+            ->assertStatus(401)
+            ->assertJsonStructure([
+                'type',
+                'message'
+            ]);
+
+        // $response->assertStatus(200);
+    }
+
 }

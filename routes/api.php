@@ -24,6 +24,7 @@ Route::get('api.json', function (Request $request) {
     return ['status' => 'ok'];
 });
 Route::post('/login', [UserController::class, 'login']);
+Route::post('/register', [UserController::class, 'register']);
 
 Route::middleware('auth:api')->prefix('influencer')->group(function(){
     Route::get('/', [InfluencerController::class, 'index'])->name('influencer.index');
