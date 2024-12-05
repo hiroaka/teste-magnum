@@ -1,14 +1,20 @@
-<<<<<<< HEAD
 # Teste Programador PHP
 
 ## Framework: Laravel
 
 O framework escolhido foi o Laravel. PPara projetos em PHP tenho escolhido sempre pela a sua robustez e elegância. Projetos feitos com Laravel tendem a ser mais organizados e optimizados por natureza do design dele.
 
+
+## Documentação API
+
+Importar o documento no Postman
+
+```
+Teste Magnum.postman_collection.json
+```
+
 ## Instalação
-=======
-## Teste Programador PHP
->>>>>>> 4c1699580fafbcd2e5f2155710a55984fa286588
+
 
 Para rodar o projeto, clone este projeto
 
