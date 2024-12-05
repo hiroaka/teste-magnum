@@ -9,7 +9,7 @@
         <title inertia>{{ config('app.name', 'MCUNHA') }}</title>
         <meta name="csrf-token" content="">
         <!-- Fonts -->
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
+        <link href="{{ asset('/css/app.css') }}" rel="stylesheet" />
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <!-- Nucleo Icons -->
@@ -23,12 +23,9 @@
         <link id="pagestyle" href="/css/argon-dashboard.css?v=2.0.0" rel="stylesheet" />
         <!-- Scripts -->
         @routes
-        @viteReactRefresh
-        @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
-        @inertiaHead
+
     </head>
     <body class="font-sans antialiased">
-        @inertia
 
         <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
 
