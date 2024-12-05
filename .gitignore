@@ -8,7 +8,10 @@
 .env
 .env.backup
 .env.production
+<<<<<<< HEAD
 .env.testing
+=======
+>>>>>>> 4c1699580fafbcd2e5f2155710a55984fa286588
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
